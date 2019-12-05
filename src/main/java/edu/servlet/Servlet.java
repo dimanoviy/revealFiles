@@ -17,7 +17,6 @@ public class Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html; charset=UTF-8");
-//        resp.getWriter().write("<h1>hello</h1>");
         resp.getWriter().write(userFolder.revealFiles());
     }
 }
