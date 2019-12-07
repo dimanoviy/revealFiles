@@ -10,13 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/files")
+@WebServlet("/")
 public class Servlet extends HttpServlet {
     @EJB
     UserFolder userFolder;
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html; charset=UTF-8");
+        resp.getWriter().write("Here are files from a root:");
         resp.getWriter().write(userFolder.revealFiles());
     }
 }

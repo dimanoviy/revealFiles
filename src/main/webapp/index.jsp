@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello World! from archtype created project</h2>
+<h2>Hello!! Go to /files</h2>
 </body>
 </html>
